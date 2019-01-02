@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+input, textarea, button {
+    font-family: 'Raleway'
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    font-size: 40px;
+    height: 600px;
+    margin: 0 0 10px 10px;
+    width: calc(50% - 10px);
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-principal {
+    background-image: url("http://s1.picswalls.com/wallpapers/2014/08/08/latest-home-wallpaper_015623955_147.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+}
+
+/*-------------- CONTACT FORM  --------------*/
+.contact-form {
+    width: 500px;
+}
+
+.contact-form-header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.title > h3 {
+    color: #045CAC;
+    margin: 12px 0 24px 0;
+    text-transform: uppercase;
+} 
+
+.sub-title {
+    font-size: 15px;
+}
+
+.logo {
+    background-image: url('./../assets/images/logo.jpeg');
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+
+.contact-form-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+
+.two-columns > input {
+    width: 48%
+}
+
+/*-------------- COMMON  --------------*/
+input {
+    border: 0;
+    border-bottom: 1px solid #045CAC;
+    padding: 10px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #045CAC;
+    font-weight: 700;
+}
+
+input:hover, input:focus, button:focus {
+    outline-width: 0;
+}
+
+textarea {
+    border: 1px solid #045CAC;
+    margin-top: 15px; 
+    padding: 15px;
+    width: 100%;
+}
+
+textarea::placeholder {
+    color: #045CAC;
+    font-weight: 500;
+}
+
+button {
+    background: #045CAC;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: -3px 3px 10px 0px grey;
+    color: white;
+    height: 40px;
+    margin: 20px;
+    width: 120px;
+}
