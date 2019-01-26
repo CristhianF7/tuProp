@@ -1,10 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-input, textarea, button {
-    font-family: 'Raleway'
+    font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -20,20 +16,26 @@ input, textarea, button {
     width: calc(50% - 10px);
 }
 
-.left {
+.left{
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .imagen-principal {
-    background-image: url("http://s1.picswalls.com/wallpapers/2014/08/08/latest-home-wallpaper_015623955_147.jpg");
+    background-image: url("https://image.freepik.com/foto-gratis/sofa-cojines-azules_1203-320.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
     width: 100%;
 }
 
-/*-------------- CONTACT FORM  --------------*/
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------- CONTACT FORM -------------*/
+
 .contact-form {
     width: 500px;
 }
@@ -46,7 +48,7 @@ input, textarea, button {
 
 .title {
     align-items: flex-start;
-    display: flex;
+    display: Flex;
     flex-direction: column;
 }
 
@@ -54,21 +56,20 @@ input, textarea, button {
     color: #045CAC;
     margin: 12px 0 24px 0;
     text-transform: uppercase;
-} 
+}
 
 .sub-title {
     font-size: 15px;
 }
 
 .logo {
-    background-image: url('./../assets/images/logo.jpeg');
+    background-image: url("./../assets/images/logo.png");
     background-size: cover;
     height: 80px;
     width: 80px;
 }
 
-.contact-form-body {
-    align-items: center;
+.contact-form-body{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -78,15 +79,15 @@ input, textarea, button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0 10px 0;
-    width: 100%;
+    margin: 10px 0 10px 0
 }
 
 .two-columns > input {
     width: 48%
 }
 
-/*-------------- COMMON  --------------*/
+/*-----------------COMMON -----------------*/
+
 input {
     border: 0;
     border-bottom: 1px solid #045CAC;
@@ -116,6 +117,8 @@ textarea::placeholder {
 }
 
 button {
+    display: flex;
+    justify-content: center;
     background: #045CAC;
     border: 0;
     border-radius: 25px;
@@ -124,4 +127,30 @@ button {
     height: 40px;
     margin: 20px;
     width: 120px;
+}
+
+/*--------------- Q&A -------------*/
+
+.title-QyA {
+    background: #045CAC;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    height: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+.content-QyA {
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px; 
+    margin-bottom: 50PX;
+}
+.question {
+    border: 40px;
+    color: #045CAC;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 30px;
 }
