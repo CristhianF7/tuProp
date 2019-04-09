@@ -4,11 +4,12 @@
   "description": "Backend para tuProp",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "yarn nodemon index.js",
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "airtable": "^0.5.8"
+    "airtable": "^0.5.8",
+    "express": "^4.16.4"
   }
 }
